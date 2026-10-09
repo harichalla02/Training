@@ -25,6 +25,9 @@ let averagesalary = totalsalary/employees.length;
 console.log(averagesalary)
 
 
+// Search by name
+console.log(employees.find(emp => emp.name === "Teja"));
+
 // Top three earners
 const topthree = employees.sort((a,b) => b.salary - a.salary).slice(0,3);
 console.log(topthree);
