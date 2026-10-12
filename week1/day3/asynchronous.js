@@ -28,6 +28,7 @@
 
 
 
+
 /* Asynchronous JavaScript
     Asynchronous JavaScript is a programming technique that allows JavaScript to execute other tasks while waiting for 
     time-consuming operations, such as API calls, timers, or file operations etc....*/
@@ -56,7 +57,6 @@
 //     }
 //     console.log('Math result ', sum);
 // }
-
 
 
 
@@ -97,6 +97,7 @@ The second timer is scheduled to run after 1 second, so it will execute before t
 
 
 
+
 /* Callbacks
     A callback is a function passed as an argument to another function 
     so that it can be called later or at a particular point.*/
@@ -128,11 +129,6 @@ The second timer is scheduled to run after 1 second, so it will execute before t
 // }
 // operationOnSum(3, 3, divideByHalf);
 // operationOnSum(5, 5, multiplyBy2); 
-
-
-
-
-
 
 
 
@@ -195,3 +191,8 @@ walkDog().then(value => {console.log(value); return cleanKitchen()})
          .then(value => {console.log(value); return takeOutTrash()})
          .then(value => {console.log(value); console.log("You finished all chores")})
          .catch(error => console.error(error));
+
+
+/* In JavaScript, .then() and .catch() are used to handle the result of a Promise.
+    - .then() handles successful completion.
+    - .catch() handles failure or rejection. */
