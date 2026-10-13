@@ -19,11 +19,11 @@ function divideByHalf(sum) {
     setTimeout(() => {console.log(Math.floor(sum / 2)); }, 2000);  // Schedules divideByHalf() to execute after approximately 2 seconds.
 }
 function multiplyBy2(sum) {
-    setTimeout(() => {console.log(sum * 2); }, 1000);       // Schedules multiplyBy2() to execute after approximately 1 seconds.
+    setTimeout(() => {console.log(sum * 2); }, 1000);  // Schedules multiplyBy2() to execute after approximately 1 seconds.
 }
 function operationOnSum(num1, num2, operation) {
     var sum = num1 + num2;
-    operation(sum);                 // Here operation is a callback function with sum as an argument.
+    operation(sum);   // Here operation is a callback function with sum as an argument.
 }
 operationOnSum(3, 3, divideByHalf);
 operationOnSum(5, 5, multiplyBy2); 

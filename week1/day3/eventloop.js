@@ -1,8 +1,8 @@
 EXAMPLE:1
 console.log("Start");
-setTimeout(() => {                     //setTimeout() schedules the callback to run after at least 2 seconds.
+setTimeout(() => {         
     console.log("Hello");
-}, 2000);
+}, 2000);   //setTimeout() schedules the callback to run after at least 2 seconds.
 console.log("End");
 
 
@@ -12,8 +12,8 @@ console.log("Start");
 setTimeout(() => {
     console.log("First timer");
     setTimeout(() => {
-        console.log("Third timer");      /*here the third timer is nested inside the first timer, 
-                                           so it will only be scheduled after the first timer's callback is executed.*/
+        console.log("Third timer");  /*here the third timer is nested inside the first timer, 
+                                    so it will only be scheduled after the first timer's callback is executed.*/
     }, 0);
 }, 2000);
 setTimeout(() => {
