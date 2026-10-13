@@ -1,5 +1,3 @@
-
-
 EXAMPLE:1
 function fun1(callback){
     setTimeout(() => {console.log("Task1"); }, 3000);  // Schedules Task1 to execute after approximately 3 seconds.
