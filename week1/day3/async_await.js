@@ -9,18 +9,16 @@ function fetchemployee(){
         },2000)
     })
 }
-fetchemployee()
-console.log(id);
-// fetchemployee().then(value => console.log(value.id));
-// fetchemployee().then(value => console.log(value.name));
-// fetchemployee().then(value => console.log(value.Department));
+fetchemployee().then(value => console.log(value.id));
+fetchemployee().then(value => console.log(value.name));
+fetchemployee().then(value => console.log(value.Department));  // Aceessing values by using .then().
 
 
 
-// async function display(){
-//     const emp = await fetchemployee();
-//     console.log(emp.name);
-//     console.log(emp.Department);
-//     console.log(emp.id);   
-// }
-// display();
+async function display(){
+    const emp = await fetchemployee();
+    console.log(emp.name);
+    console.log(emp.Department);
+    console.log(emp.id);      // Accessing values by using async/await.
+}
+display();
