@@ -13,11 +13,11 @@ function greet(name) {
 }
 async function display(){
     try{
-        const name = await greet("Hari");
-        console.log(`Hai ${name}`);
+        const name = await greet("Hari");   // try block will handle the resolve promise
+        console.log(`Hai ${name}`);        // executed only when promise is fullfilled
     }
-    catch(error){
-        console.log(error)
+    catch(error){                          // catch block will handle rejection promise
+        console.log(error)                 // executed only when promise is rejected
     }
 }
 display();
