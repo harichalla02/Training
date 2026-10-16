@@ -11,6 +11,12 @@ const greet = (name:string) => {
 greet("Tony")
 
 
+const add = (a:number,b:number) => setTimeout(() => {
+    console.log(a+b);
+}, 2000);
+add(20,20);
+add(1215,1205);
+ 
 
 
 function squareresult(sum:number):void{
