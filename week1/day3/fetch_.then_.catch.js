@@ -8,10 +8,10 @@
 
 fetch("https://jsonplaceholder.typicode.com/users/5")
     .then(response => {
-        console.log(response);
+        // console.log(response);
         if(!response.ok){
             throw new Error("User not found");
         }
         return response.json();})
-    .then(data => console.log(data))
+    .then(data => console.log(data.email))
     .catch(error => console.log(error));
