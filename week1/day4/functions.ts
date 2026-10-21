@@ -30,4 +30,4 @@ function calculate(num1:number,num2:number,operation:(sum:number) => void):void{
     operation(sum);
 }
 calculate(20,30,squareresult);
-calculate(30,40,devidedby2)
+calculate(30,40,devidedby2);

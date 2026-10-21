@@ -1,9 +1,9 @@
-function isAdult(age:number){
+function isAdult(age:number):boolean{
     if(age >= 18){
-        return "Adult";
+        return true;
     }
     else{
-        return "Not an Adult";
+        return false;
     }
 }
 console.log(isAdult(25));

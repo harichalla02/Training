@@ -1,10 +1,12 @@
-type UserId = string | number;
+//Union types allos values with different types
 const user1 : UserId = 122;
+type UserId = string | number;  
 const user2 :UserId = "ATS122"
 console.log(user1);
 console.log(user2);
 
 
+// Literal types are restricted to perticular values
 type orderStatus = "pending" | "shipped" | "delivered" | "cancelled"
 const status1 : orderStatus = "cancelled";
 const status2 : orderStatus = "shipped";
