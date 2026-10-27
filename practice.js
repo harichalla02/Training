@@ -397,3 +397,10 @@ What will the output be? Then implement the program and verify your prediction. 
 //     }
 // }
 // display();
+
+
+
+function add(...numbers){
+    return numbers.reduce((total,sum) => total + sum, "")
+}
+console.log(add("h","a","r","i"))
