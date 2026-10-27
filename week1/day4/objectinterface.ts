@@ -4,6 +4,7 @@ interface Employee{
     salary: number;
     department: number;
 }
+//Union Type alias
 type employee_role = "Developer" | "Tester"|"Manager";
 
 interface contactdetails{
@@ -16,12 +17,12 @@ interface address{
     taddress: string;
 }
 
-interface employeewithconatct
-    extends Employee, contactdetails, address{
+interface Employee
+    extends  contactdetails, address{
 
 }
-
-const employee: employeewithconatct & {role: employee_role} = {
+//Intersecting union type alias and interface.
+const employee: Employee & {role: employee_role} = {
     id: 101,
     name: "Tony",
     salary: 75000,
