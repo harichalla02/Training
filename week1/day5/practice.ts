@@ -78,9 +78,94 @@
 
 
 
-function printLength<T extends {length: number}>(value: T): void{
-    console.log(value.length)
-}
+// function printLength<T extends {length: number}>(value: T): void{
+//     console.log(value.length)
+// }
 
-printLength("Hello World");
-printLength([10,20,30,40]);
+// printLength("Hello World");
+// printLength([10,20,30,40]);
+
+
+
+
+
+
+
+
+// interface Student{
+//     id: number,
+//     name: string, 
+//     age: number,
+//     marks: number[]
+// }
+
+// const studentHari: Student = {
+//     id: 1205,
+//     name: "Hari",
+//     age: 26,
+//     marks: [78,98,99]
+// }
+
+// const studentSiva: Student = {
+//     id: 1225,
+//     name: "Siva",
+//     age: 24,
+//     marks: [78, 25, 37]
+// }
+
+// const studentMounika: Student = {
+//     id: 1215,
+//     name: "Mounika",
+//     age: 24,
+//     marks: [95,98,99]
+// }
+
+
+// function displayDetails(student: Student): void{
+//     console.log(student.id);
+//     console.log(student.name);
+//     console.log(student.age);
+//     if(student.marks.every(mark => mark >= 35))
+//        {
+//             console.log("Passed")
+//         }
+//     else{
+//         console.log("Failed")
+//     }
+// }
+
+// displayDetails(studentHari);
+// displayDetails(studentSiva);
+// displayDetails(studentMounika);
+
+
+
+
+
+
+// let name: string = "Hari";
+// name = "Charan";
+// console.log(name);
+
+
+// function greet(name: string, age?: number): string { 
+//   if (age) { 
+//     return `${name} is ${age} years old`; 
+//   } 
+//   return `Hello, ${name}`; 
+// } 
+// console.log(greet("Siri"));
+// console.log(greet("Hari", 58));
+
+
+// function greet(name: string, greeting: string = "Hello"): string { 
+//   return `${greeting}, ${name}`; 
+// }
+// console.log(greet("Siri"));
+// console.log(greet("Hari", "Hi"));
+
+
+function subTotal(...numbers: number[]): number{
+    return numbers.reduce((total, num) => total + num, 0)
+}
+console.log(subTotal(10,20,30,40));
