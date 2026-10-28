@@ -19,24 +19,54 @@ const membership: Customer[] =[
 ]
 
 // Write your function here.
-// function check(value : string):void{ 
-//     const findemployee = employee.find(emp => emp.name === value);
-//     if(findemployee){
-//         console.log(findemployee.salary)        
-//     }
-//     else{
-//         const findcustomer = membership.find(cus => cus.name === value);
-//         if(findcustomer){
-//             console.log(findcustomer.membershipLevel);
-//         }
-//         else{
-//             console.log("Person not found in employee and customer arrays!")
-//         }
-//     }
-// }
+function check(value : string):void{ 
+    const findemployee = employee.find(emp => emp.name === value);
+    if(findemployee){
+        console.log(findemployee.salary)        
+    }
+    else{
+        const findcustomer = membership.find(cus => cus.name === value);
+        if(findcustomer){
+            console.log(findcustomer.membershipLevel);
+        }
+        else{
+            console.log("Person not found in employee and customer arrays!")
+        }
+    }
+}
 
 
-function check(value : string):void{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function check1(value : string):void{
     const person = employee.find(emp => emp.name === value) ?? membership.find(cus => cus.name === value);
     if(person){
         // Use "in" to narrow the type.
@@ -52,6 +82,6 @@ function check(value : string):void{
     }
 }
 // Do not use any.
-check("Hari");
-check("CVR");
-check("buddy")
+check1("Hari");
+check1("CVR");
+check1("buddy")
